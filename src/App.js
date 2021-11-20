@@ -14,7 +14,7 @@ function App(props) {
       <hr/>
     <Switch>       
        {props.context.token ? 
-       <Route path='/contacts' component={ContactsView}/>:
+       <Route path='/contacts/:id' component={ContactsView}/>:
        <Route path='/auth' component={AuthContact}/>},
        <Route path='/add' component={AddContact} />           
     </Switch>

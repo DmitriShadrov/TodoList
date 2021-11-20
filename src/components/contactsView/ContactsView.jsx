@@ -4,12 +4,13 @@ import List from "../list/List";
 import withContext from "../../context/withContext";
 import Contact from "../contact/Contact";
 
+
 class ContactsView extends React.Component {
     constructor(props){
         super(props);
     }
     render(){
-        console.log(this.props.context);
+        console.log(this.props.match.params.id);
         return <div className='contacts'>
                     <div className='list'>
                         <List/>
